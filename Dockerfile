@@ -21,8 +21,8 @@ FROM tomcat:9.0.68-jdk11-corretto
 #WORKDIR /app
 RUN mv /usr/local/tomcat/webapps /usr/local/tomcat/webapps2
 RUN mv /usr/local/tomcat/webapps.dist /usr/local/tomcat/webapps
-COPY --from=build /app/target/wrap_bkd-0.0.1-SNAPSHOT /usr/local/tomcat/webapps
-RUN mv /usr/local/tomcat/webapps/wrap_bkd-0.0.1-SNAPSHOT /usr/local/tomcat/webapps/bkd.war
+COPY --from=build /app/target/wrap_bkd-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps
+RUN mv /usr/local/tomcat/webapps/wrap_bkd-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/bkd.war
 # RUN mkdir /mnt/carik_assets
 # RUN mkdir /mnt/carik_assets/telusur/
 # RUN mkdir /opt/report
