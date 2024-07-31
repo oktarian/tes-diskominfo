@@ -1,13 +1,13 @@
-package id.go.jakarta.dppapp.wrap_bkd;
+package com.diskominfo.livecode;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class WrapBkdApplication {
+public class LiveCodeApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(WrapBkdApplication.class, args);
+        SpringApplication.run(LiveCodeApplication.class, args);
     }
 
 }
